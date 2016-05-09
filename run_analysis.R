@@ -44,8 +44,8 @@ varNames <- as.character(varNames[, 2])
 
 ## Names the variables in each dataset
 
-colnames(TrainDF) <- c("subject id", "activity id", varNames)
-colnames(TestDF) <- c("subject id", "activity id", varNames)
+colnames(TrainDF) <- c("subject", "activity", varNames)
+colnames(TestDF) <- c("subject", "activity", varNames)
 
 ## Deals with any duplicating or "illegal" variable names and prepase the 
 ## sets for merging.
@@ -59,7 +59,7 @@ CombinedData <- bind_rows(TrainDF, TestDF)
 
 ## Renames the dataset variable names
 
-colnames(CombinedData) <- c("subject_id", "activity_id", varNames)
+colnames(CombinedData) <- c("subject", "activity", varNames)
 
 ## Extracts only the measurements on the mean and standard deviation for each 
 ## measurement (including the subject and activity id's)
@@ -69,13 +69,15 @@ ExtractedData <- CombinedData[, grepl("mean[(]|std|subject|activity",
 
 ## Uses descriptive activity names to name the activities in the data set
 
-ExtractedData[["activity_id"]] <- mapvalues(ExtractedData$activity, 
+ExtractedData[["activity"]] <- mapvalues(ExtractedData$activity, 
                                             c("1", "2", "3", "4", "5", "6"), 
-                                            c("walking", "walking upstairs", 
-                                              "walking downstairs", "sitting", 
+                                            c("walking", "walking_upstairs", 
+                                              "walking_downstairs", "sitting", 
                                               "standing", "laying"))
+## Identification variables to factor variables
 
-ExtractedData[["activity_id"]] <- as.factor(ExtractedData[["activity_id"]])
+ExtractedData[["activity"]] <- as.factor(ExtractedData[["activity"]])
+ExtractedData[["subject"]] <- as.factor(ExtractedData[["subject"]])
 
 ## Updates varNames to match ExtractedData
 
@@ -86,7 +88,7 @@ varNames <- colnames(ExtractedData)
 for (i in 1:length(varNames))
 {
         varNames[i] = gsub("\\()","",varNames[i])
-        varNames[i] = gsub("-std$","StdDev",varNames[i])
+        varNames[i] = gsub("-std","StdDev",varNames[i])
         varNames[i] = gsub("-mean","Mean",varNames[i])
         varNames[i] = gsub("^(t)","time",varNames[i])
         varNames[i] = gsub("^(f)","freq",varNames[i])
@@ -106,7 +108,7 @@ colnames(ExtractedData) <- varNames
 ## Groups the dataset by subject and activity id's and assigns the result to
 ## seperate dataset
 
-GroupData <- group_by(ExtractedData, subject_id, activity_id)
+GroupData <- group_by(ExtractedData, subject, activity)
 
 ## second, independent tidy data set with the average of each variable for 
 ## each activity and each subject.

@@ -40,22 +40,18 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 **1. Identifiers (factor)**
 
-1. `subject_id` - The subject ID for each obseravtion
+1. `subject` - The subject ID for each obseravtion
 
-2. `activity_id` - The activity performed during which the observation has been collected
+2. `activity` - The activity performed during which the observation has been collected
 
   1. laying
   2. sitting
   3. standing
   4. walking
-  5. walking downstairs
-  6. walking upstairs
+  5. walking_downstairs
+  6. walking_upstairs
 
 **2. Variables (numeric)**
-
-1. subject_id
-
-2. activity_id
 
 3. timeBodyAccMean-X
 
@@ -63,11 +59,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 5. timeBodyAccMean-Z
 
-6. timeBodyAcc-std-X
+6. timeBodyAccStdDev-X
 
-7. timeBodyAcc-std-Y
+7. timeBodyAccStdDev-Y
 
-8. timeBodyAcc-std-Z
+8. timeBodyAccStdDev-Z
 
 9. timeGravityAccMean-X
 
@@ -75,11 +71,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 11. timeGravityAccMean-Z
 
-12. timeGravityAcc-std-X
+12. timeGravityAccStdDev-X
 
-13. timeGravityAcc-std-Y
+13. timeGravityAccStdDev-Y
 
-14. timeGravityAcc-std-Z
+14. timeGravityAccStdDev-Z
 
 15. timeBodyAccJerkMean-X
 
@@ -87,11 +83,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 17. timeBodyAccJerkMean-Z
 
-18. timeBodyAccJerk-std-X
+18. timeBodyAccJerkStdDev-X
 
-19. timeBodyAccJerk-std-Y
+19. timeBodyAccJerkStdDev-Y
 
-20. timeBodyAccJerk-std-Z
+20. timeBodyAccJerkStdDev-Z
 
 21. timeBodyGyroMean-X
 
@@ -99,11 +95,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 23. timeBodyGyroMean-Z
 
-24. timeBodyGyro-std-X
+24. timeBodyGyroStdDev-X
 
-25. timeBodyGyro-std-Y
+25. timeBodyGyroStdDev-Y
 
-26. timeBodyGyro-std-Z
+26. timeBodyGyroStdDev-Z
 
 27. timeBodyGyroJerkMean-X
 
@@ -111,11 +107,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 29. timeBodyGyroJerkMean-Z
 
-30. timeBodyGyroJerk-std-X
+30. timeBodyGyroJerkStdDev-X
 
-31. timeBodyGyroJerk-std-Y
+31. timeBodyGyroJerkStdDev-Y
 
-32. timeBodyGyroJerk-std-Z
+32. timeBodyGyroJerkStdDev-Z
 
 33. timeBodyAccelerationMagnitudeMean
 
@@ -143,11 +139,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 45. freqBodyAccMean-Z
 
-46. freqBodyAcc-std-X
+46. freqBodyAccStdDev-X
 
-47. freqBodyAcc-std-Y
+47. freqBodyAccStdDev-Y
 
-48. freqBodyAcc-std-Z
+48. freqBodyAccStdDev-Z
 
 49. freqBodyAccJerkMean-X
 
@@ -155,11 +151,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 51. freqBodyAccJerkMean-Z
 
-52. freqBodyAccJerk-std-X
+52. freqBodyAccJerkStdDev-X
 
-53. freqBodyAccJerk-std-Y
+53. freqBodyAccJerkStdDev-Y
 
-54. freqBodyAccJerk-std-Z
+54. freqBodyAccJerkStdDev-Z
 
 55. freqBodyGyroMean-X
 
@@ -167,11 +163,11 @@ This section reviews the data resulting from the analysis represented in the `fi
 
 57. freqBodyGyroMean-Z
 
-58. freqBodyGyro-std-X
+58. freqBodyGyroStdDev-X
 
-59. freqBodyGyro-std-Y
+59. freqBodyGyroStdDev-Y
 
-60. freqBodyGyro-std-Z
+60. freqBodyGyroStdDev-Z
 
 61. freqBodyAccelerationMagnitudeMean
 
