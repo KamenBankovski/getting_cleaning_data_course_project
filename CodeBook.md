@@ -83,6 +83,7 @@ This section reviews the data resulting from the analysis represented in the `su
 ### Columns
 
 **Identifiers (factor)**
+
 1. `subject_id` - The subject ID for each obseravtion
 
 2. `activity_id` - The activity performed during which the observation has been collected
