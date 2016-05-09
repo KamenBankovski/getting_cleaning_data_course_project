@@ -31,21 +31,35 @@ Fo the original UCI HAR study dateset, please visit the following [link](https:/
 ### The Current Study
 
 The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. Requirements for a complete submission are as follows:
+
 1. a tidy data set as described below
+
 2. a link to a Github repository with your script for performing the analysis
+
 3. a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data called `CodeBook.md` 
+
 4. a `README.md` in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
 The `run_analysis.R` included in the dataset does the following:
+
 1. Loads the R packages neccessary for the analysis (plyr, dplyr)
+
 2. Downloads and uznips the source data files 
+
 3. Reads the following data into R:
-..1. X_train.txt
-..2. X_test.txt
-..3. y_train.tx
-..4. y_test.txt
-..5. subject_train.txt
-..6. subject_test.txt
+
+  1. X_train.txt
+
+  2. X_test.txt
+
+  3. y_train.tx
+
+  4. y_test.txt
+
+  5. subject_train.txt
+
+  6. subject_test.txt
+
 4. Craetes subject and activity columns in the Train and Test datasets
 5. Reads the source data variable names into R and names the columns of the Train and Test datasets accordingly
 6. Merges the Train and Test datasets
