@@ -82,7 +82,7 @@ This section reviews the data resulting from the analysis represented in the `su
 
 ### Columns
 
-**Identifiers (factor)**
+**1. Identifiers (factor)**
 
 1. `subject_id` - The subject ID for each obseravtion
 
