@@ -17,10 +17,14 @@ The source data for the presented dataset is the Human Activity Recognition Usin
 
 ## The dataset
 
-The dataset includes the following files: 
+The dataset includes the following files:
+
 1. `summ_data.csv` - the clean and tidy dataset
+
 2. `CodeBook.md` - Describing the study design and the variables used
+
 3. `run_analysis.R` - an R script that takes the UCI HAR dataset as an input,              performs an analysis and outputs a tidy, clean dataset of the mean measures of          the mean and standard deviation of the measures of the UCI HAR dataset on a by          subject by activity basis. 
+
 4. `README.md` - explains how all of the scripts work and how they are connected.
 
 ## Additional Information
