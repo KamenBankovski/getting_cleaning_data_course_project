@@ -74,11 +74,21 @@ The `run_analysis.R` included in the dataset does the following:
 
 10. Creates a tidy data set with the average of each variable for each activity and each subject.
 
-11. Writes the final tidy dataset to a .csv file in the script's directory called `summ_data.csv`
+11. Writes the final tidy dataset to a .csv file in the script's directory called `final_data.txt`
 
+**Notes** 
+
+  - The `run_analysis.R` script downloads and writes files and directories in the current working directory of the user, NOT in the script's directory
+  
+  - R and RStudio Version information
+        
+        + RStudio - Version 0.99.878
+        
+        + R i386 3.2.3
+  
 ## Code Book
 
-This section reviews the data resulting from the analysis represented in the `summ_data.csv` file. 
+This section reviews the data resulting from the analysis represented in the `final_data.txt` file. 
 
 ### Columns
 
@@ -96,6 +106,7 @@ This section reviews the data resulting from the analysis represented in the `su
   6. walking upstairs
 
 **2. Variables (numeric)**
+
 1. subject_id
 
 2. activity_id

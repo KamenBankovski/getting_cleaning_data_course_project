@@ -114,9 +114,9 @@ GroupData <- group_by(ExtractedData, subject_id, activity_id)
 SummData <- summarise_each(GroupData, funs(mean))
 
 ## Writes the final SummData dataset in a .csv file in the script's directory 
-## called "summ_data.csv
+## called "final_data.txt"
 
-write.csv(SummData, file = "summ_data.csv")
+write.table(SummData, file = "final_data.txt", row.names = FALSE, quote = FALSE)
 
 
 

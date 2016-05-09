@@ -19,7 +19,7 @@ The source data for the presented dataset is the Human Activity Recognition Usin
 
 The dataset includes the following files:
 
-1. `summ_data.csv` - the clean and tidy dataset
+1. `final_data.txt` - the clean and tidy dataset
 
 2. `CodeBook.md` - Describing the study design and the variables used
 
